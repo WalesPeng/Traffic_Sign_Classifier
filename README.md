@@ -102,4 +102,7 @@ My final model results were:
 * validation set accuracy of 0.977
 * test set accuracy of 0.925
 
+#### 5. Test a Model on New Images
+
+ I tested all 5 traffic signs. I expect the stop sign to be particularly difficult beacuse it used the Chinese characters. Additionally, the '禁止超车' sign is not in the dataset. On another side, the images are all at different scales, and so when they are rescaled to 32x32 they appear to have slightly distortion.  Furthermore, the images with 'no passing zone' has a complicate background that may cause some confusion in the model. Finally, all the images appear to be daytime images and so brightness should not be a large problem in classifying, although many of the training images are darker than these tests.
 
