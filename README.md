@@ -99,10 +99,13 @@ I have tried different epochs and find that the increasement of accurancy would 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* validation set accuracy of 0.977
-* test set accuracy of 0.925
+* validation set accuracy of 0.983
+* test set accuracy of 0.927
 
 #### 5. Test a Model on New Images
 
- I tested all 5 traffic signs. I expect the stop sign to be particularly difficult beacuse it used the Chinese characters. Additionally, the '禁止超车' sign is not in the dataset. On another side, the images are all at different scales, and so when they are rescaled to 32x32 they appear to have slightly distortion.  Furthermore, the images with 'no passing zone' has a complicate background that may cause some confusion in the model. Finally, all the images appear to be daytime images and so brightness should not be a large problem in classifying, although many of the training images are darker than these tests.
+ * All 16 new traffic signs were tested . 
+ * The accuracy of test on new image is 61.5% .
+ 
+ The accuracy of test on new image seemed not very good. The result shown that symmetrical images such as '31-1.jpg' and '27-1.jpg' cannot be detected. Additionally, The circular outline traffic sign such as '27-1.jpg' may not exist within the data set and therefore cannot be detected correctly. On another side, the triangle's outline like '29-1.jpg' and '18-1.jpg' can be detected by top5. Furthermore, the images are all at different scales, and so when they are rescaled to 32x32 they appear to have slightly distortion.  Finally, all the images appear to be daytime images and so brightness should not be a large problem in classifying, although many of the training images are darker than these tests.
 
