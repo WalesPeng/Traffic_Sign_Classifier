@@ -103,9 +103,13 @@ My final model results were:
 * test set accuracy of 0.927
 
 #### 5. Test a Model on New Images
+##### Discussion
+ All 16 new traffic signs were downloaded from google by search the keyword "German traffic image". These images all have good brightness and contrast. But I made some changes, such as '31-1.jpg' is symmetrical from origin one, the traffic sign named '27-1.jpg' with a circular outline instead of triangle outline.
 
+##### Test result
  * All 16 new traffic signs were tested . 
  * The accuracy of test on new image is 61.5% .
  
+##### Analyze
  The accuracy of test on new image seemed not very good. The result shown that symmetrical images such as '31-1.jpg' and '27-1.jpg' cannot be detected. Additionally, The circular outline traffic sign such as '27-1.jpg' may not exist within the data set and therefore cannot be detected correctly. On another side, the triangle's outline like '29-1.jpg' and '18-1.jpg' can be detected by top5. Furthermore, the images are all at different scales, and so when they are rescaled to 32x32 they appear to have slightly distortion.  Finally, all the images appear to be daytime images and so brightness should not be a large problem in classifying, although many of the training images are darker than these tests.
 
